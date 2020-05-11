@@ -1,17 +1,17 @@
-Steps to deploy my text classifier model as a web application:   
+## Steps to deploy my text classifier model as a web application:   
     
 1. You can take dump of the Vectorizer and Best Classifier in the local files using the following code in notebook:   
 (https://pranitjaiswal.netlify.com/files/Jaiswal_Project.ipynb)   
    
 (Note: To avoid any possible errors, kindly don't change the following filenames)   
    
-# Take dump of Best Classifier using Pickle   
+###### Take dump of Best Classifier using Pickle   
 pickle.dump(bestClassifier, open('model.pkl', 'wb'))   
    
-# Take dump of Vectorizer using Pickle   
+###### Take dump of Vectorizer using Pickle   
 pickle.dump(tfidfconverter, open('tfidfconverter1.pkl', 'wb'))   
    
-# Take extra dump of Vectorizer using Pickle (in case .pkl files are not supported in your flask app)   
+###### Take extra dump of Vectorizer using Pickle (in case .pkl files are not supported in your flask app)   
 pickle.dump(tfidfconverter, open('tfidfconverter2.pickle', 'wb'))   
    
 - OR -   
